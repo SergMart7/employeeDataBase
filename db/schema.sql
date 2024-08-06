@@ -2,7 +2,7 @@
 
 CREATE DATABASE employee_db;
 
---  CONNECTS TO THE DATABASE
+-- CONNECTS TO THE DATABASE
 
 \c employee_db;
 
@@ -20,7 +20,7 @@ CREATE TABLE role (
     title VARCHAR(30) UNIQUE NOT NULL,
     salary DECIMAL(10, 2) NOT NULL,
     department_id INTEGER NOT NULL,
-    FOREIGN KEY (departmend_id) REFERENCES department(id)
+    FOREIGN KEY (department_id) REFERENCES department(id)
 );
 
 -- CREATES OUR EMPLOYEES TABLE
